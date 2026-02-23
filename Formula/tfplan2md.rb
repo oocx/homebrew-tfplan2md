@@ -7,14 +7,17 @@ class Tfplan2md < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/oocx/tfplan2md/releases/download/v1.26.2/tfplan2md_1.26.2_macos-arm64.tar.gz"
-      sha256 "0fd8864515b06046e35a462ba76be587066bd7f8867a674e8bdf85652233133c"
+      sha256 "a868028135eaf47fabce397011245422213d3682652bb8581117f430d21efcd0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/oocx/tfplan2md/releases/download/v1.26.2/tfplan2md_1.26.2_linux-x64.tar.gz"
-      sha256 "10aa65bd12ec7cc63e26839ff6db44cb82725b10616689c2ffef2b200894e79a"
+      sha256 "465bd6f899f2796a71e7b4dc2470975f37b49718d12871ba8e38fa2c6c50cc80"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/oocx/tfplan2md/releases/download/v1.26.2/tfplan2md_1.26.2_linux-arm64.tar.gz"
+      sha256 "764fdcc7d3e83fe7dc9e27dff8872fbee6bc2ea8ea2f315fb5e5152000eac6c9"
     end
   end
 

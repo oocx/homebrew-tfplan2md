@@ -2,22 +2,22 @@ class Tfplan2md < Formula
   desc "Convert Terraform plan JSON files into human-readable Markdown reports"
   homepage "https://github.com/oocx/tfplan2md"
   license "MIT"
-  version "1.41.0"
+  version "1.41.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.0/tfplan2md_1.41.0_macos-arm64.tar.gz"
-      sha256 "1e4595382bfa8dffdaa583360a3193f2c82b513aa9e8d26cbd485817eb290ce8"
+      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.1/tfplan2md_1.41.1_macos-arm64.tar.gz"
+      sha256 "8d2c0300e3d0446a553b8b49329e51e67505b39d7b2a94ecb07379f7c7183a30"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.0/tfplan2md_1.41.0_linux-x64.tar.gz"
-      sha256 "682c0856bb2f19d40f2e777eecc689610e58a0696ebf11d6a5b6c9d10f9168f8"
+      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.1/tfplan2md_1.41.1_linux-x64.tar.gz"
+      sha256 "e31d3dc8ba9ce28143ca4bb9ff260fc126da59d726efe609dc5f377801c42ee1"
     elsif Hardware::CPU.arm?
-      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.0/tfplan2md_1.41.0_linux-arm64.tar.gz"
-      sha256 "3f1c226148dc03df1cb8471521bd41e092eb76bf96846b7f62a8acdcd2579f68"
+      url "https://github.com/oocx/tfplan2md/releases/download/v1.41.1/tfplan2md_1.41.1_linux-arm64.tar.gz"
+      sha256 "4ada82d6dad07c9ea00bd20df54b3edeed2354bfbc583ce35fa8caa54111011a"
     end
   end
 
